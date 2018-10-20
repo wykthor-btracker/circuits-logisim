@@ -1,0 +1,22 @@
+0000 - Load X on ALU register A 
+0001 - Load X on ALU register B 
+0010 - Perform addition, output on address X 
+0011 - Jump instruction to X 
+0100 - Reset ALU 
+0101 - Show contents of X 
+0110 - Perform subtraction and output on X 
+0111 - Load data input on address Y 
+1000 - Move data on Temp Register to X 
+1010 - Perform Not on A and output on address X 
+1110 - Perform And and output on address X 
+------Fibonacci------ 
+0111 0000 load 
+0111 0001 load 
+0000 0000 load 0 on A 
+0001 0001 load 1 on B 
+0101 0001 show contents of B 
+0010 0001 add A and B, save on B 
+1000 0000 Load Last B on A 
+0101 0001 Show B 
+0011 0001 Jump to 1 
+------Fibonacci------
